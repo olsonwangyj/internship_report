@@ -1,119 +1,254 @@
-<h1 class="code-line" data-line-start=0 data-line-end=1 ><a id="_0"></a>实习工作报告总结</h1>
-<h2 class="code-line" data-line-start=2 data-line-end=3 ><a id="_2"></a>个人信息</h2>
-<ul>
-<li class="has-line-data" data-line-start="3" data-line-end="4"><strong>姓名</strong>：王彦傑</li>
-<li class="has-line-data" data-line-start="4" data-line-end="6"><strong>日期</strong>：2024年12月</li>
-</ul>
-<h2 class="code-line" data-line-start=6 data-line-end=7 ><a id="_6"></a>工作内容</h2>
-<p class="has-line-data" data-line-start="8" data-line-end="9">在本次实习中，我主要学习了大语言模型（LLM）的部署、微调、本地知识库的构建等内容，并将这些技术应用于本机和云环境中。以下是我在工作中的具体学习、实验和技术难点总结。</p>
-<h3 class="code-line" data-line-start=10 data-line-end=11 ><a id="1__10"></a>1. <strong>大语言模型部署与微调学习</strong></h3>
-<ul>
-<li class="has-line-data" data-line-start="11" data-line-end="12">我首先学习了大语言模型（LLM）相关的基础知识。这包括了解如何部署、微调以及如何利用这些技术解决特定任务。</li>
-<li class="has-line-data" data-line-start="12" data-line-end="13">我学习了 <strong>Ollama</strong> 工具，它可以帮助在本地快速部署语言模型。通过学习，我理解了如何将模型从云环境迁移到本地环境。</li>
-<li class="has-line-data" data-line-start="13" data-line-end="19">以下是学习的其中一部分链接
-<ul>
-<li class="has-line-data" data-line-start="14" data-line-end="15"><a href="https://zhuanlan.zhihu.com/p/644450744">如何制造一个垂直领域大模型</a></li>
-<li class="has-line-data" data-line-start="15" data-line-end="16"><a href="https://mp.weixin.qq.com/s/qxMTfp9dSFNOr0XNg0s-KQ">本地部署私人知识库的大模型！Llama 3 + RAG！</a></li>
-<li class="has-line-data" data-line-start="16" data-line-end="17"><a href="https://zhuanlan.zhihu.com/p/636270877">【LLM】从零开始训练大模型</a></li>
-<li class="has-line-data" data-line-start="17" data-line-end="19"><a href="https://www.bilibili.com/video/BV1AF411b7xQ?spm_id_from=333.788.videopod.sections&amp;vd_source=268180b5fd02cbfd1147852ced13078d">GPT，GPT-2，GPT-3 论文精读【论文精读】</a></li>
-</ul>
-</li>
-</ul>
-<h3 class="code-line" data-line-start=19 data-line-end=20 ><a id="2__Ollama_19"></a>2. <strong>在本机上部署 Ollama</strong></h3>
-<ul>
-<li class="has-line-data" data-line-start="20" data-line-end="21">了解了部署大语言模型的基本步骤，包括安装依赖包、配置环境等。</li>
-<li class="has-line-data" data-line-start="21" data-line-end="22">我成功部署了 <strong>Ollama</strong> 工具，并加载了 <strong>Llama 3.2</strong> 语言模型。这个过程让我对大语言模型的工作原理有了更深入的理解。</li>
-<li class="has-line-data" data-line-start="22" data-line-end="24">部署过程中，面临了依赖包安装和环境配置的问题。通过查阅相关文档，解决了安装依赖包的问题，确保了部署成功。</li>
-</ul>
-<h3 class="code-line" data-line-start=24 data-line-end=25 ><a id="3_AnythingLLM_24"></a>3. <strong>AnythingLLM部署于本地知识库构建</strong></h3>
-<ul>
-<li class="has-line-data" data-line-start="25" data-line-end="26">学习了本地部署<strong>AnythingLLM</strong>相关知识，并成功将其部署到本机环境中。</li>
-<li class="has-line-data" data-line-start="26" data-line-end="27">我是通过 Docker 部署 <strong>AnythingLLM</strong>，能够高效地管理不同的模型和环境，同时避免了依赖冲突。</li>
-<li class="has-line-data" data-line-start="27" data-line-end="28">成功通过 Docker 容器安装了所需的依赖包，并通过拉取官方镜像并配置相关的环境变量，确保了 <strong>AnythingLLM</strong> 能够正常运行。</li>
-<li class="has-line-data" data-line-start="28" data-line-end="29">我使用了 <strong>llama3.2:latest</strong> 作为语言模型，<strong>nomic-embed-text:latest</strong> 作为嵌入模型。</li>
-<li class="has-line-data" data-line-start="29" data-line-end="33">以下是相关链接
-<ul>
-<li class="has-line-data" data-line-start="30" data-line-end="31"><a href="https://blog.csdn.net/qq_17153885/article/details/142024670">本地私有化RAG知识库搭建—基于Ollama+AnythingLLM保姆级教程</a></li>
-<li class="has-line-data" data-line-start="31" data-line-end="33"><a href="https://zhuanlan.zhihu.com/p/671853034">AnythingLLM：基于RAG方案构专属私有知识库（开源｜高效｜可定制）</a></li>
-</ul>
-</li>
-</ul>
-<h3 class="code-line" data-line-start=33 data-line-end=34 ><a id="4_RagFlow__33"></a>4. <strong>RagFlow 部署与本地知识库构建</strong></h3>
-<ul>
-<li class="has-line-data" data-line-start="34" data-line-end="35">在完成 Ollama 和 AnythingLLM 的部署后，我继续探索 <strong>RagFlow</strong> 的使用，并在本地成功部署了它。</li>
-<li class="has-line-data" data-line-start="35" data-line-end="36"><strong>RagFlow</strong> 是一个强大的工具，能够结合多个模型和数据集，搭建本地知识库。我通过它实现了本地知识库的搭建。</li>
-<li class="has-line-data" data-line-start="36" data-line-end="37">在拉取 <strong>RagFlow</strong> 的镜像时，需要改变 Docker 中的 json 文件。</li>
-<li class="has-line-data" data-line-start="37" data-line-end="38">在使用 RagFlow 时，我需要配置数据源和查询接口，并通过网络将 <strong>RagFlow</strong> 和 <strong>Ollama</strong> 连接起来。</li>
-<li class="has-line-data" data-line-start="38" data-line-end="39">在最初我使用了 <strong>llama3.2:latest</strong> 作为语言模型，<strong>nomic-embed-text:latest</strong> 作为嵌入模型。</li>
-<li class="has-line-data" data-line-start="39" data-line-end="43">以下是相关链接
-<ul>
-<li class="has-line-data" data-line-start="40" data-line-end="41"><a href="https://blog.csdn.net/FrenzyTechAI/article/details/137548526">RAGFlow：基于OCR和文档解析的下一代 RAG 引擎</a></li>
-<li class="has-line-data" data-line-start="41" data-line-end="43"><a href="https://blog.csdn.net/zengmingen/article/details/143669859">Ollama服务以监听0.0.0.0地址</a></li>
-</ul>
-</li>
-</ul>
-<h3 class="code-line" data-line-start=43 data-line-end=44 ><a id="5__ChatGLM__43"></a>5. <strong>阿里云部署 ChatGLM 并进行微调</strong></h3>
-<ul>
-<li class="has-line-data" data-line-start="44" data-line-end="45">在成功搭建了本地知识库后，我开始将 <strong>ChatGLM</strong> 模型部署到 <strong>阿里云</strong> 上。</li>
-<li class="has-line-data" data-line-start="45" data-line-end="46">部署过程中，我按照官方文档的指引，配置了必要的环境和依赖，并成功运行了 <strong>ChatGLM</strong>。</li>
-<li class="has-line-data" data-line-start="46" data-line-end="47">我首先使用了 <strong>ChatGLM</strong> 自带的数据集（<code>train.json</code> 和 <code>dev.json</code>）进行微调，取得了较好的效果。这个过程让我了解了如何通过微调来优化大语言模型的表现。</li>
-<li class="has-line-data" data-line-start="47" data-line-end="48">在微调过程中，我使用了 <strong>wandb</strong> 将训练的过程可视化。</li>
-<li class="has-line-data" data-line-start="48" data-line-end="49">接着，我尝试使用自己的数据集（从魔搭社区获取）进行微调。但微调效果不如预期。我进行了多次尝试，调整了学习率、训练轮次等超参数，但效果仍然有限。</li>
-<li class="has-line-data" data-line-start="49" data-line-end="54">以下是相关链接
-<ul>
-<li class="has-line-data" data-line-start="50" data-line-end="51"><a href="https://help.aliyun.com/zh/pai/use-cases/overview-7?spm=5176.pai-console-inland.console-base_help.dexternal.1ded642dBXmHkT">本文汇总了PAI的最佳实践</a></li>
-<li class="has-line-data" data-line-start="51" data-line-end="52"><a href="https://help.aliyun.com/zh/pai/use-cases/train-and-fine-tune-a-chatglm-model?spm=a2c4g.11186623.help-menu-30347.d_3_8_4.54af5d03tQb7KG">轻量微调和推理ChatGLM模型实践</a></li>
-<li class="has-line-data" data-line-start="52" data-line-end="54"><a href="https://www.modelscope.cn/home">魔搭社区</a></li>
-</ul>
-</li>
-</ul>
-<h3 class="code-line" data-line-start=54 data-line-end=55 ><a id="6__54"></a>6. <strong>技术难点：微调效果不佳</strong></h3>
-<ul>
-<li class="has-line-data" data-line-start="55" data-line-end="56">我在使用自己的数据集时，微调效果不理想。经过分析，我认为可能是数据集本身过小，导致模型无法有效地学习到有价值的信息。</li>
-<li class="has-line-data" data-line-start="56" data-line-end="57">为了改善效果，我调整了学习率，从 1e-2 降低到 5e-5，训练轮次从 3 轮增加到 6 轮。</li>
-<li class="has-line-data" data-line-start="57" data-line-end="59">尽管这些调整有所帮助，但模型在新数据上的表现依然不如预期。</li>
-</ul>
-<h3 class="code-line" data-line-start=59 data-line-end=60 ><a id="7_RagFlow__59"></a>7. <strong>RagFlow 性能测试</strong></h3>
-<ul>
-<li class="has-line-data" data-line-start="60" data-line-end="61">在部署 RagFlow 后，我对其进行了详细的性能测试，评估了模型的不同解析方法下的性能。</li>
-<li class="has-line-data" data-line-start="61" data-line-end="68">我特别关注了以下几个方面：
-<ul>
-<li class="has-line-data" data-line-start="62" data-line-end="63"><strong>不同解析方法支持的文件格式</strong>：测试了不同解析方法下，RagFlow 可以成功上传的文件格式。</li>
-<li class="has-line-data" data-line-start="63" data-line-end="64"><strong>不同解析方法的回答效果</strong>：分析了不同解析方法下，模型的回答效果，包括对PDF、CSV等格式的提问效果。</li>
-<li class="has-line-data" data-line-start="64" data-line-end="65"><strong>数据提取的准确度和效率</strong>：通过对不同类型的文件内容进行测试，评估了模型在信息提取上的准确度与效率。</li>
-<li class="has-line-data" data-line-start="65" data-line-end="68">下面是测试报告文档：
-<ul>
-<li class="has-line-data" data-line-start="66" data-line-end="68"><a href="测试RAGFlow.pdf" target="_blank">测试RAGFlow</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 class="code-line" data-line-start=68 data-line-end=69 ><a id="8_Manual_68"></a>8. <strong>Manual解析方法性能测试</strong></h3>
-<ul>
-<li class="has-line-data" data-line-start="69" data-line-end="70">在测试了 RagFlow 的不同的解析方法之后，我又对 RagFlow 中解析方法为 Maual 时的性能进行了详细测试。</li>
-<li class="has-line-data" data-line-start="70" data-line-end="80">我特别关注了以下方面：
-<ul>
-<li class="has-line-data" data-line-start="71" data-line-end="72"><strong>解析效率与处理能力</strong>：测试了不同文档类型和嵌入模型下，Manual 方法所展现的性能表现。</li>
-<li class="has-line-data" data-line-start="72" data-line-end="73"><strong>文件类型支持</strong>：我对 PDF 和 Word（docx）格式的文档进行了详细测试，分析了它们在不同情况下的解析效果。</li>
-<li class="has-line-data" data-line-start="73" data-line-end="74"><strong>模型稳定性与准确性</strong>: 测试了 Manual 方法在不同解析过程中的稳定性，以及不同大语言模型在回答时的稳定性。通过对模型在实际解析任务中的表现评估。</li>
-<li class="has-line-data" data-line-start="74" data-line-end="75"><strong>性能瓶颈</strong>：通过对本地和外网模型在 Manual 方法下的解析和回答测试，测试了文档大小对解析效率的影响，还有模型的遗忘轮数等。</li>
-<li class="has-line-data" data-line-start="75" data-line-end="76"><strong>优化建议</strong>：根据测试结果，我提出了不同方面的优化建议，以帮助更好地使用RagFlow。</li>
-<li class="has-line-data" data-line-start="76" data-line-end="80">下面是测试报告文档：
-<ul>
-<li class="has-line-data" data-line-start="77" data-line-end="78"><a href="测试Manual.pdf" target="_blank">测试Manual</a></li>
-<li class="has-line-data" data-line-start="78" data-line-end="80"><a href="测试Maunal总结.xlsx" target="_blank">测试Manual总结</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 class="code-line" data-line-start=80 data-line-end=81 ><a id="9__80"></a>9. <strong>总结与后续工作计划</strong></h3>
-<ul>
-<li class="has-line-data" data-line-start="81" data-line-end="82">通过本次实习，我深入学习了大语言模型的部署、微调与优化过程，掌握了如何将这些技术应用到实际项目中。</li>
-<li class="has-line-data" data-line-start="82" data-line-end="83">我成功地将 <strong>Ollama</strong>、<strong>AnythingLLM</strong> 和 <strong>RagFlow</strong> 部署到本地环境，并在阿里云上完成了 <strong>ChatGLM</strong> 的部署与微调。通过这些实践，我对大语言模型的运行原理、微调技术以及本地知识库的构建有了更深入的理解。</li>
-<li class="has-line-data" data-line-start="83" data-line-end="84">在遇到技术难点时，我通过查阅文档、调整配置和反复测试，成功解决了问题。这些经验提升了我的问题解决能力。</li>
-<li class="has-line-data" data-line-start="84" data-line-end="86">后续，我计划继续优化微调效果，特别是增加数据集的规模，尝试更多微调策略。此外，我还计划深入研究 <strong>ptuning</strong> 技术，并探索如何通过少量数据进行更高效的微调。</li>
-</ul>
-<h2 class="code-line" data-line-start=86 data-line-end=87 ><a id="_86"></a>总结</h2>
-<p class="has-line-data" data-line-start="87" data-line-end="88">通过本次实习，我不仅掌握了大语言模型的基础理论，还深入学习了如何将这些技术应用于实际项目中。在部署、调优和性能测试的过程中，我积累了丰富的实践经验，解决了多个技术难点。未来，我将继续深化对大语言模型和知识库构建的理解，进一步提升自己的技术能力。</p>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实习工作报告总结</title>
+    <style>
+        /* 通用样式 */
+        body {
+            font-family: 'Arial', '微软雅黑', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+        }
+
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* 页面容器样式 */
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* 标题样式 */
+        h1 {
+            font-size: 2.5rem;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #555;
+            border-bottom: 2px solid #1a73e8;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        /* 段落样式 */
+        p {
+            font-size: 1rem;
+            margin: 10px 0;
+            text-align: justify;
+        }
+
+        /* 列表样式 */
+        ul li {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        ul li ul li {
+            font-size: 0.9rem;
+            margin-left: 15px;
+            color: #555;
+        }
+
+        /* 链接样式 */
+        .external-links a {
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        /* 页脚样式 */
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #777;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>实习工作报告总结</h1>
+
+        <h2>个人信息</h2>
+        <ul>
+            <li><strong>姓名</strong>：王彦傑</li>
+            <li><strong>日期</strong>：2024年12月</li>
+        </ul>
+
+        <h2>工作内容</h2>
+        <p>在本次实习中，我主要学习了大语言模型（LLM）的部署、微调、本地知识库的构建等内容，并将这些技术应用于本机和云环境中。以下是我在工作中的具体学习、实验和技术难点总结。</p>
+
+        <h3>1. 大语言模型部署与微调学习</h3>
+        <ul>
+            <li>我首先学习了大语言模型（LLM）相关的基础知识。这包括了解如何部署、微调以及如何利用这些技术解决特定任务。</li>
+            <li>我学习了 <strong>Ollama</strong> 工具，它可以帮助在本地快速部署语言模型。通过学习，我理解了如何将模型从云环境迁移到本地环境。</li>
+            <li>以下是学习的其中一部分链接：
+                <ul>
+                    <li><a href="https://zhuanlan.zhihu.com/p/644450744">如何制造一个垂直领域大模型</a></li>
+                    <li><a href="https://mp.weixin.qq.com/s/qxMTfp9dSFNOr0XNg0s-KQ">本地部署私人知识库的大模型！Llama 3 + RAG！</a></li>
+                    <li><a href="https://zhuanlan.zhihu.com/p/636270877">【LLM】从零开始训练大模型</a></li>
+                    <li><a href="https://www.bilibili.com/video/BV1AF411b7xQ">GPT，GPT-2，GPT-3 论文精读【论文精读】</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>2. 在本机上部署 Ollama</h3>
+        <ul>
+            <li>了解了部署大语言模型的基本步骤，包括安装依赖包、配置环境等。</li>
+            <li>我成功部署了 <strong>Ollama</strong> 工具，并加载了 <strong>Llama 3.2</strong> 语言模型。</li>
+            <li>部署过程中，面临了依赖包安装和环境配置的问题。</li>
+        </ul>
+
+        <h3>3. AnythingLLM部署与本地知识库构建</h3>
+        <ul>
+            <li>学习了本地部署 <strong>AnythingLLM</strong> 相关知识，并成功将其部署到本机环境中。</li>
+            <li>我是通过 Docker 部署 <strong>AnythingLLM<strong>，能够高效地管理不同的模型和环境，同时避免了依赖冲突。</li>
+            <li>成功通过 Docker 容器安装了所需的依赖包，并通过拉取官方镜像并配置相关的环境变量，确保了 <strong>AnythingLLM<strong> 能够正常运行。</li>
+            <li>我使用了 <strong>llama3.2:latest<strong> 作为语言模型，<strong>nomic-embed-text:latest<strong> 作为嵌入模型。</li>
+                <li>以下是相关链接：
+                <ul>
+                    <li><a href="https://blog.csdn.net/qq_17153885/article/details/142024670">本地私有化RAG知识库搭建—基于Ollama+AnythingLLM保姆级教程</a></li>
+                    <li><a href="https://zhuanlan.zhihu.com/p/671853034">AnythingLLM：基于RAG方案构专属私有知识库（开源｜高效｜可定制）</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>4. RagFlow 部署与本地知识库构建</h3>
+        <ul>
+            <li>在完成 <strong>Ollama</strong> 和 <strong>AnythingLLM</strong> 的部署后，我继续探索 <strong>RagFlow</strong> 的使用，并在本地成功部署了它。</li>
+            <li><strong>RagFlow</strong> 是一个强大的工具，能够结合多个模型和数据集，搭建本地知识库。我通过它实现了本地知识库的搭建。</li>
+            <li>在拉取 <strong>RagFlow</strong> 的镜像时，需要改变 Docker 中的 json 文件。</li>
+            <li>在使用 <strong>RagFlow</strong> 时，我需要配置数据源和查询接口，并通过网络将 <strong>RagFlow</strong> 和 <strong>Ollama</strong> 连接起来。</li>
+            <li>在最初我使用了 <strong>llama3.2:latest</strong> 作为语言模型，<strong>nomic-embed-text:latest</strong> 作为嵌入模型。</li>
+            <li>以下是相关链接：
+                <ul>
+                    <li><a href="https://blog.csdn.net/FrenzyTechAI/article/details/137548526">RAGFlow：基于OCR和文档解析的下一代 RAG 引擎</a></li>
+                    <li><a href="https://blog.csdn.net/zengmingen/article/details/143669859">Ollama服务以监听0.0.0.0地址</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>5. 阿里云部署 ChatGLM 并进行微调</h3>
+        <ul>
+            <li>在成功搭建了本地知识库后，我开始将 <strong>ChatGLM</strong> 模型部署到 <strong>阿里云</strong> 上。</li>
+            <li>部署过程中，我按照官方文档的指引，配置了必要的环境和依赖，并成功运行了 <strong>ChatGLM</strong>。</li>
+            <li>我首先使用了 <strong>ChatGLM</strong> 自带的数据集（`train.json` 和 `dev.json`）进行微调，取得了较好的效果。这个过程让我了解了如何通过微调来优化大语言模型的表现。</li>
+            <li>在微调过程中，我使用了 <strong>wandb</strong> 将训练的过程可视化。</li>
+            <li>接着，我尝试使用自己的数据集（从魔搭社区获取）进行微调。但微调效果不如预期。我进行了多次尝试，调整了学习率、训练轮次等超参数，但效果仍然有限。</li>
+            <li>以下是相关链接：
+                <ul>
+                    <li><a href="https://help.aliyun.com/zh/pai/use-cases/overview-7?spm=5176.pai-console-inland.console-base_help.dexternal.1ded642dBXmHkT">本文汇总了PAI的最佳实践</a></li>
+                    <li><a href="https://help.aliyun.com/zh/pai/use-cases/train-and-fine-tune-a-chatglm-model?spm=a2c4g.11186623.help-menu-30347.d_3_8_4.54af5d03tQb7KG">轻量微调和推理ChatGLM模型实践</a></li>
+                    <li><a href="https://www.modelscope.cn/home">魔搭社区</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>6. 技术难点：微调效果不佳</h3>
+        <ul>
+            <li>我在使用自己的数据集时，微调效果不理想。经过分析，我认为可能是数据集本身过小，导致模型无法有效地学习到有价值的信息。</li>
+            <li>为了改善效果，我调整了学习率，从 1e-2 降低到 5e-5，训练轮次从 3 轮增加到 6 轮。</li>
+            <li>尽管这些调整有所帮助，但模型在新数据上的表现依然不如预期。</li>
+        </ul>
+
+        <h3>7. RagFlow 性能测试</h3>
+        <ul>
+            <li>在部署 <strong>RagFlow</strong> 后，我对其进行了详细的性能测试，评估了模型的不同解析方法下的性能。</li>
+            <li>我特别关注了以下几个方面：
+                <ul>
+                    <li><strong>不同解析方法支持的文件格式</strong>：测试了不同解析方法下，RagFlow 可以成功上传的文件格式。</li>
+                    <li><strong>不同解析方法的回答效果</strong>：分析了不同解析方法下，模型的回答效果，包括对PDF、CSV等格式的提问效果。</li>
+                    <li><strong>数据提取的准确度和效率</strong>：通过对不同类型的文件内容进行测试，评估了模型在信息提取上的准确度与效率。</li>
+                </ul>
+            </li>
+            <li>下面是测试报告文档：
+                <ul>
+                    <li><a href="测试RAGFlow.pdf">测试RAGFlow</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>8. Manual解析方法性能测试</h3>
+        <ul>
+            <li>在测试了 RagFlow 的不同的解析方法之后，我又对 RagFlow 中解析方法为 Manual 时的性能进行了详细测试。</li>
+            <li>我特别关注了以下方面：
+                <ul>
+                    <li><strong>解析效率与处理能力</strong>：测试了不同文档类型和嵌入模型下，Manual 方法所展现的性能表现。</li>
+                    <li><strong>文件类型支持</strong>：我对 PDF 和 Word（docx）格式的文档进行了详细测试，分析了它们在不同情况下的解析效果。</li>
+                    <li><strong>模型稳定性与准确性</strong>：测试了 Manual 方法在不同解析过程中的稳定性，以及不同大语言模型在回答时的稳定性。</li>
+                    <li><strong>性能瓶颈</strong>：通过对本地和外网模型在 Manual 方法下的解析和回答测试，测试了文档大小对解析效率的影响，还有模型的遗忘轮数等。</li>
+                    <li><strong>优化建议</strong>：根据测试结果，我提出了不同方面的优化建议，以帮助更好地使用RagFlow。</li>
+                </ul>
+            </li>
+            <li>下面是测试报告文档：
+                <ul>
+                    <li><a href="测试Manual.pdf">测试Manual</a></li>
+                    <li><a href="测试Manual总结.xlsx">测试Manual总结</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>9. 总结与后续工作计划</h3>
+        <ul>
+            <li>通过本次实习，我深入学习了大语言模型的部署、微调与优化过程，掌握了如何将这些技术应用到实际项目中。</li>
+            <li>我成功地将 <strong>Ollama</strong>、<strong>AnythingLLM</strong> 和 <strong>RagFlow</strong> 部署到本地环境，并在阿里云上完成了 <strong>ChatGLM</strong> 的部署与微调。</li>
+            <li>通过这些实践，我对大语言模型的运行原理、微调技术以及本地知识库的构建有了更深入的理解。</li>
+            <li>在遇到技术难点时，我通过查阅文档、调整配置和反复测试，成功解决了问题。这些经验提升了我的问题解决能力。</li>
+            <li>后续，我计划继续优化微调效果，特别是增加数据集的规模，尝试更多微调策略。此外，我还计划深入研究 <strong>ptuning</strong> 技术，并探索如何通过少量数据进行更高效的微调。</li>
+        </ul>
+
+        <h3>总结</h3>
+        <ul>
+            <li>通过本次实习，我不仅掌握了大语言模型的基础理论，还深入学习了如何将这些技术应用于实际项目中。</li>
+            <li>在部署、调优和性能测试的过程中，我积累了丰富的实践经验，解决了多个技术难点。</li>
+            <li>未来，我将继续深化对大语言模型和知识库构建的理解，进一步提升自己的技术能力。</li>
+        </ul>
+
+    </div>
+
+    <footer>
+        © 2024 王彦傑. 版权所有.
+    </footer>
+</body>
+</html>
